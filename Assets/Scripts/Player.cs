@@ -58,7 +58,7 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        Application.targetFrameRate = 40;
+        Application.targetFrameRate = 60;
         StateMachine = new PlayerStateMachine();
 
         IdleState = new PlayerIdleState(StateMachine, this, "Idle");
